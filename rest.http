@@ -1,0 +1,36 @@
+GET http://localhost:5000
+Authorization: Bearer ---
+
+###Register User
+POST  http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": ""
+}
+
+###Login User
+POST  http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": ""
+}
+
+###Refresh Token
+POST  http://localhost:5000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": ""
+}
+
+###Logout User
+DELETE   http://localhost:5000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": ""
+}
